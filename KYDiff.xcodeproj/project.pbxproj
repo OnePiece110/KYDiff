@@ -17,7 +17,23 @@
 		3D6884AC28FEE9A000E055B8 /* KYChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6884A828FEE9A000E055B8 /* KYChange.swift */; };
 		3D6884AD28FEE9A000E055B8 /* KYDiffAware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6884A928FEE9A000E055B8 /* KYDiffAware.swift */; };
 		3D6884AE28FEE9A000E055B8 /* KYHeckel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6884AA28FEE9A000E055B8 /* KYHeckel.swift */; };
+		3D6884B628FF908200E055B8 /* KYDiffTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6884B528FF908200E055B8 /* KYDiffTests.swift */; };
+		3D6884BC28FF908500E055B8 /* KYChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6884A828FEE9A000E055B8 /* KYChange.swift */; };
+		3D6884BD28FF908800E055B8 /* KYDiffAware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6884A928FEE9A000E055B8 /* KYDiffAware.swift */; };
+		3D6884BE28FF908A00E055B8 /* KYHeckel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6884AA28FEE9A000E055B8 /* KYHeckel.swift */; };
+		3D6884BF28FF908C00E055B8 /* KYHeckelDiff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6884A728FEE9A000E055B8 /* KYHeckelDiff.swift */; };
+		3D6884C128FF90A100E055B8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6884C028FF90A100E055B8 /* User.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3D6884B728FF908200E055B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D68848628FEE97E00E055B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D68848D28FEE97E00E055B8;
+			remoteInfo = KYDiff;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		3D68848E28FEE97E00E055B8 /* KYDiff.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KYDiff.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,10 +48,20 @@
 		3D6884A828FEE9A000E055B8 /* KYChange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KYChange.swift; sourceTree = "<group>"; };
 		3D6884A928FEE9A000E055B8 /* KYDiffAware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KYDiffAware.swift; sourceTree = "<group>"; };
 		3D6884AA28FEE9A000E055B8 /* KYHeckel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KYHeckel.swift; sourceTree = "<group>"; };
+		3D6884B328FF908200E055B8 /* KYDiffTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KYDiffTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D6884B528FF908200E055B8 /* KYDiffTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYDiffTests.swift; sourceTree = "<group>"; };
+		3D6884C028FF90A100E055B8 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		3D68848B28FEE97E00E055B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D6884B028FF908200E055B8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -49,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				3D68849028FEE97E00E055B8 /* KYDiff */,
+				3D6884B428FF908200E055B8 /* KYDiffTests */,
 				3D68848F28FEE97E00E055B8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				3D68848E28FEE97E00E055B8 /* KYDiff.app */,
+				3D6884B328FF908200E055B8 /* KYDiffTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,6 +123,15 @@
 			path = Heckel;
 			sourceTree = "<group>";
 		};
+		3D6884B428FF908200E055B8 /* KYDiffTests */ = {
+			isa = PBXGroup;
+			children = (
+				3D6884B528FF908200E055B8 /* KYDiffTests.swift */,
+				3D6884C028FF90A100E055B8 /* User.swift */,
+			);
+			path = KYDiffTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -115,6 +152,24 @@
 			productReference = 3D68848E28FEE97E00E055B8 /* KYDiff.app */;
 			productType = "com.apple.product-type.application";
 		};
+		3D6884B228FF908200E055B8 /* KYDiffTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D6884BB28FF908200E055B8 /* Build configuration list for PBXNativeTarget "KYDiffTests" */;
+			buildPhases = (
+				3D6884AF28FF908200E055B8 /* Sources */,
+				3D6884B028FF908200E055B8 /* Frameworks */,
+				3D6884B128FF908200E055B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D6884B828FF908200E055B8 /* PBXTargetDependency */,
+			);
+			name = KYDiffTests;
+			productName = KYDiffTests;
+			productReference = 3D6884B328FF908200E055B8 /* KYDiffTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -127,6 +182,10 @@
 				TargetAttributes = {
 					3D68848D28FEE97E00E055B8 = {
 						CreatedOnToolsVersion = 14.0.1;
+					};
+					3D6884B228FF908200E055B8 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 3D68848D28FEE97E00E055B8;
 					};
 				};
 			};
@@ -144,6 +203,7 @@
 			projectRoot = "";
 			targets = (
 				3D68848D28FEE97E00E055B8 /* KYDiff */,
+				3D6884B228FF908200E055B8 /* KYDiffTests */,
 			);
 		};
 /* End PBXProject section */
@@ -156,6 +216,13 @@
 				3D68849E28FEE98000E055B8 /* LaunchScreen.storyboard in Resources */,
 				3D68849B28FEE98000E055B8 /* Assets.xcassets in Resources */,
 				3D68849928FEE97E00E055B8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D6884B128FF908200E055B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,7 +243,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3D6884AF28FF908200E055B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D6884BF28FF908C00E055B8 /* KYHeckelDiff.swift in Sources */,
+				3D6884B628FF908200E055B8 /* KYDiffTests.swift in Sources */,
+				3D6884C128FF90A100E055B8 /* User.swift in Sources */,
+				3D6884BE28FF908A00E055B8 /* KYHeckel.swift in Sources */,
+				3D6884BC28FF908500E055B8 /* KYChange.swift in Sources */,
+				3D6884BD28FF908800E055B8 /* KYDiffAware.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3D6884B828FF908200E055B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D68848D28FEE97E00E055B8 /* KYDiff */;
+			targetProxy = 3D6884B728FF908200E055B8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		3D68849728FEE97E00E055B8 /* Main.storyboard */ = {
@@ -368,6 +456,42 @@
 			};
 			name = Release;
 		};
+		3D6884B928FF908200E055B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7H35643SZ9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bitmart.exchange.KYDiffTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KYDiff.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KYDiff";
+			};
+			name = Debug;
+		};
+		3D6884BA28FF908200E055B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7H35643SZ9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bitmart.exchange.KYDiffTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KYDiff.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KYDiff";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -385,6 +509,15 @@
 			buildConfigurations = (
 				3D6884A328FEE98000E055B8 /* Debug */,
 				3D6884A428FEE98000E055B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D6884BB28FF908200E055B8 /* Build configuration list for PBXNativeTarget "KYDiffTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D6884B928FF908200E055B8 /* Debug */,
+				3D6884BA28FF908200E055B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
